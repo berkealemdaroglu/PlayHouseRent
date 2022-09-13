@@ -1,7 +1,8 @@
-package com.ersinberkealemdaroglu.playhouserent
+package com.ersinberkealemdaroglu.playhouserent.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ersinberkealemdaroglu.playhouserent.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

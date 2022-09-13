@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PlayHouseRent</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started_title">Pay House Rent \nOnline</string>
+    <string name="get_started_info_text">Lowest Charges. Instant Transfers.</string>
+    <string name="get_started_button_text">Get Started</string>
+    <string name="get_started_bottom_info_text">Trusted by 1 million customers</string>
 </resources>
