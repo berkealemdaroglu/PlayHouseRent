@@ -5,12 +5,24 @@
       <map>
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/get_started_background_color_selector.xml" value="0.5435" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/get_started_background_mask_selector.xml" value="0.5425" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_bottom_background_icon.xml" value="0.4805" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_email_background.xml" value="0.4805" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_email_background_color.xml" value="0.4805" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_email_icon.xml" value="0.4805" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_get_started_background.xml" value="0.5435" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_get_started_bottom.xml" value="0.5435" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_get_started_home_image.xml" value="0.3005" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_house_login_top_background.xml" value="0.4805" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_landlord_selected_bakcground.xml" value="0.314" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_login_screen_landlord_not_selected.xml" value="0.314" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_login_screen_tenant_selected.xml" value="0.498" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_new_login_background.xml" value="0.314" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/drawable/ic_tenant_not_selected.xml" value="0.314" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/fragment_get_started.xml" value="0.33" />
-        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/fragment_login.xml" value="0.55" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/fragment_home.xml" value="0.55" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/fragment_landlord_sign_up_continued.xml" value="0.5026041666666666" />
+        <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/Users/ersin/FMSS/PlayHouseRent/app/src/main/res/layout/fragment_verification.xml" value="0.55" />
       </map>
     </option>

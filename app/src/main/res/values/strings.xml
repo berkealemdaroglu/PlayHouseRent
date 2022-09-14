@@ -5,4 +5,14 @@
     <string name="get_started_info_text">Lowest Charges. Instant Transfers.</string>
     <string name="get_started_button_text">Get Started</string>
     <string name="get_started_bottom_info_text">Trusted by 1 million customers</string>
+    <string name="bottom_icon">bottom_icon</string>
+    <string name="rentpayz">RentPayz</string>
+    <string name="login_to_contiune">Login to contiune</string>
+    <string name="tenant_selected">Tenant</string>
+    <string name="landlord_not_selected">Landlord</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account ? Signup</string>
+    <string name="email_address">Email Address</string>
+    <string name="email">Email</string>
+    <string name="landlord_signup_completed">Landlord SignUp Completed</string>
+    <string name="home_screen">HOME SCREEN</string>
 </resources>

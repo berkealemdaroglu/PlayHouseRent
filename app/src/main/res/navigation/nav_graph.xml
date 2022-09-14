@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/getStartedFragment">
 
@@ -17,11 +18,24 @@
         android:name="com.ersinberkealemdaroglu.playhouserent.ui.LoginFragment"
         android:label="LoginFragment" >
         <action
-            android:id="@+id/action_loginFragment_to_verificationFragment"
-            app:destination="@id/verificationFragment" />
+            android:id="@+id/action_loginFragment_to_landlordSignUpContinuedFragment"
+            app:destination="@id/landlordSignUpContinuedFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/verificationFragment"
-        android:name="com.ersinberkealemdaroglu.playhouserent.ui.VerificationFragment"
-        android:label="VerificationFragment" />
+        android:id="@+id/homeFragment"
+        android:name="com.ersinberkealemdaroglu.playhouserent.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/landlordSignUpContinuedFragment"
+        android:name="com.ersinberkealemdaroglu.playhouserent.ui.LandlordSignUpContinuedFragment"
+        android:label="fragment_landlord_sign_up_continued"
+        tools:layout="@layout/fragment_landlord_sign_up_continued" >
+        <action
+            android:id="@+id/action_landlordSignUpContinuedFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

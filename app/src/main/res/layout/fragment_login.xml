@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -9,7 +10,260 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/get_started_background_mask_selector"
         tools:context=".ui.LoginFragment">
+
+        <ImageView
+            android:id="@+id/new_shape_i"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_minus50sdp"
+            android:background="@drawable/ic_new_login_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-2dp"
+            android:contentDescription="@string/bottom_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_bottom_background_icon" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:lineHeight="@dimen/_44sdp"
+            android:text="@string/rentpayz"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_33ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/login_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login_to_contiune"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_title" />
+
+        <ImageButton
+            android:id="@+id/tenantButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_shape_i"
+            app:srcCompat="@drawable/ic_login_screen_tenant_selected"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/tenantButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_shape_i"
+            app:srcCompat="@drawable/ic_tenant_not_selected"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/landlordImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_marginEnd="@dimen/_23sdp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tenantButton"
+            app:srcCompat="@drawable/ic_login_screen_landlord_not_selected"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/landlordImageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:layout_marginEnd="@dimen/_23sdp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tenantButton"
+            app:srcCompat="@drawable/ic_landlord_selected_bakcground"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tenantText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/poppins"
+            android:lineHeight="@dimen/_27sdp"
+            android:text="@string/tenant_selected"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/tenantButton"
+            app:layout_constraintStart_toStartOf="@+id/tenantButton"
+            app:layout_constraintTop_toBottomOf="@+id/tenantButton" />
+
+        <TextView
+            android:id="@+id/tenantText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/poppins"
+            android:lineHeight="@dimen/_27sdp"
+            android:text="@string/tenant_selected"
+            android:textColor="@color/landlord_text_color"
+            android:visibility="invisible"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/tenantButton"
+            app:layout_constraintStart_toStartOf="@+id/tenantButton"
+            app:layout_constraintTop_toBottomOf="@+id/tenantButton" />
+
+        <TextView
+            android:id="@+id/landlordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/landlord_not_selected"
+            android:visibility="visible"
+            android:textColor="@color/landlord_text_color"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/landlordImageButton"
+            app:layout_constraintStart_toStartOf="@+id/landlordImageButton"
+            app:layout_constraintTop_toBottomOf="@+id/landlordImageButton" />
+
+        <TextView
+            android:id="@+id/landlordText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/landlord_not_selected"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/landlordImageButton"
+            app:layout_constraintStart_toStartOf="@+id/landlordImageButton"
+            app:layout_constraintTop_toBottomOf="@+id/landlordImageButton" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tenantText"
+            app:srcCompat="@drawable/ic_email_background"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/don_t_have_an_account_signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/email_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_email_background_color"
+            android:drawableStart="@drawable/ic_email_icon"
+            android:drawablePadding="@dimen/_5sdp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:startIconDrawable="@drawable/ic_email_icon"
+            app:startIconTint="@color/white"
+            tools:ignore="Autofill" />
+
+        <ImageButton
+            android:id="@+id/tenantLogic"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:background="@drawable/ic_button_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/landlordLogic"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:visibility="invisible"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_button_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2"
+            tools:ignore="ContentDescription" />
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

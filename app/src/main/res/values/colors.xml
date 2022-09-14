@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="get_started_button_color">#F3B007</color>
+    <color name="landlord_text_color">#BDABD8</color>
 </resources>
